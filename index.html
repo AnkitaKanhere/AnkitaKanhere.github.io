@@ -12,28 +12,35 @@
 <body>
 <nav>
 <img src="images/logo.png" alt="" class="logo">
-<ul>
+<ul id="menu-links">
 	<li>Digital Product Passport</li>
 	<li>Digital Data Chain</li>
 	<li>About Us</li>
     <li>Services</li>
 </ul>
 <button class="nav-btn">Get Started <img src="images/arrow-white.png" alt=""></button>
-	
+	<img src="images/menu.png" alt="" class="menu-icon" onclick="toogleMenu()">
 </nav>
 <div class="header">
+<div class="header-content">
+
 <h1>Digital<br>Product<br>Passport</h1>
 <div class="btn-container">
-<button class="btn-dark">Read More <img src="images/arrow-white.png" alt=""></button>
+<!--<button class="btn-dark">Read More <img src="images/arrow-white.png" alt=""></button> -->
 <button class="btn-white">Read More <img src="images/arrow-white.png" alt=""></button>
 </div>
-<p> The Digital Product Passport (DPP) is a transformative tool designed to provide comprehensive information about a product throughout its lifecycle. It enables transparency and traceability by documenting essential details such as materials, manufacturing processes, environmental impact, and recycling opportunities. The DPP empowers consumers to make informed choices while encouraging manufacturers to adopt sustainable practices.  
-</p>
+<p> The Digital Product Passport (DPP) is a transformative tool designed to provide comprehensive information about a product throughout its lifecycle. It enables transparency and traceability by documenting essential details such as materials, manufacturing processes, environmental impact, and recycling opportunities. The DPP empowers consumers to make informed choices while encouraging manufacturers to adopt sustainable practices. By facilitating the sharing of accurate data among stakeholders, the DPP aims to support a circular economy, reduce waste, and promote responsible consumption, ultimately contributing to a more sustainable future.</p>
+</div>
 <img src="images/dpp.png" alt="" class="user-img">
 </div>
 
 <script>
 let navbar = document.querySelector('nav');
+let menuLinks = document.getElementById("menu-links");
+
+function toogleMenu(){
+menuLinks.ClassList.toggle('show-menu');
+}
 
 window.onscroll = fucntion(){
 if(window.scrollY > 0){
@@ -42,6 +49,7 @@ navbar.style.background = '#eefff9';
 navbar.style.background = 'transparent';
 }
 }
+
 </script>
 </body>
 </html>

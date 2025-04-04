@@ -30,8 +30,8 @@ nav .logo{
 	cursor: pointer;
 }	
 .nav-btn{
-	background: #000;
-	color: #fff;
+	background: #fff;
+	color: #000;
 	font-size: 16px;
 	padding: 15px 25px;
 	border: 0;
@@ -57,6 +57,7 @@ nav .logo{
     margin-top: 100px;
 	font-size: 8vw;
 	line-height: 9vw;
+	
 }	
 .btn-container{
 	margin: 20px 0;
@@ -105,4 +106,60 @@ nav .logo{
 		bottom: 0;
 		top: 20%;
 }	
-		
+.menu-icon{
+	display: none;
+	
+}	
+
+@media only screen and  (max-width: 600px){
+nav ul{
+	position: absolute;
+	width: 100%;
+	background: #000;
+	color: #fff;
+	left: 0;
+	top: 100%;
+	text-align: center;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s;
+}
+.nav-btn{
+	display: none;
+}
+nav .logo{
+	width: 150px;
+}
+nav ul li{
+	margin: 10px;
+	font-size: 14px;
+}
+.menu-icon{
+	display: block;
+	width: 30px;
+}
+.show-menu{
+	max-height: 80px;
+}
+
+}	
+
+@media only screen and (max-width: 600px){
+.header{
+	min-height: auto;
+	padding: 0;
+}	
+.user-img{
+	width: 100%;
+	right: auto;
+	position: relative;
+	margin-top: 100px;
+}
+.header-content{
+	position: absolute;
+	bottom: 0;
+	padding: 0 10%;
+	z-index: 2;
+	padding-bottom: 40px;
+}
+}
