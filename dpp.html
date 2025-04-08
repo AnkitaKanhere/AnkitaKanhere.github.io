@@ -13,7 +13,7 @@
 <nav>
 <img src="images/logo.png" alt="" class="logo">
 <ul id="menu-links">
-	<li><a style="text-decoration:none" href="dpp.html">Digital Product Passport</a></li>
+	<li>Digital Product Passport</li>
 	<li>Digital Data Chain</li>
 	<li>About Us</li>
     <li>Services</li>
@@ -33,7 +33,7 @@
 </div>
 <img src="images/dpp.png" alt="" class="user-img">
 </div>
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
 <script>
 let navbar = document.querySelector('nav');
 let menuLinks = document.getElementById("menu-links");
@@ -50,13 +50,6 @@ navbar.style.background = 'transparent';
 }
 }
 
- $(function () {
-            $('#nav a').on('click', function (e) {
-                e.preventDefault();
-                var page = $(this).attr('href');
-                $('#content').load(page);
-            });
-        });
 </script>
 </body>
 </html>
